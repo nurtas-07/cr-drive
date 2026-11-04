@@ -51,3 +51,7 @@ The wearable and journey artwork was generated using the built-in ImageGen tool 
 ## Verification
 
 Browser checks covered desktop and 390px mobile layouts, all three languages, absence of horizontal overflow, images, alert/offline/acknowledgement states, driver mode, calculator boundaries, FAQ, dialog opening and Escape dismissal. Final production build is checked separately before packaging.
+
+## GitHub Pages compatibility
+
+Vite uses `base: './'`; product image paths and the favicon are relative. `.nojekyll` is copied into every production build. Publish the prebuilt root using Settings → Pages → Deploy from a branch → the uploaded branch → /(root).
